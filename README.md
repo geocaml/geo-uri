@@ -23,11 +23,13 @@ val geo : Geo_uri.t = <abstr>
 val s : string = "geo:12.34,45.67;crs=wgs84;u=1.2;key=value"
 ```
 
-There are function to get an OCaml value representing a geo URI from a string too.
+There are functions to get an OCaml value representing a geo URI from a string too.
 
 ```ocaml
 # let geo' = Geo_uri.of_string s;;
 val geo' : Geo_uri.t = <abstr>
+# Geo_uri.coords_arr geo';;
+- : float array = [|12.34; 45.67|]
 # geo = geo' && s = Geo_uri.to_string geo';;
 - : bool = true
 ```
