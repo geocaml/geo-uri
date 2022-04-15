@@ -1,0 +1,4 @@
+(library
+ (name geo_uri)
+ (public_name geo-uri)
+ (libraries eio))

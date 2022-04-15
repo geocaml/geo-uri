@@ -1,0 +1,4 @@
+(mdx
+ (packages geo-uri)
+ (preludes doc/prelude.ml)
+ (files README.md))
